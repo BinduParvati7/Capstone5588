@@ -11,9 +11,9 @@ Bindu Parvati Jonnala Gadda(She/Her)
 * Bio: An enthusiastic graduate student in Data Science and Analytics major at University of Missouri-Kansas City and a former Big Data Developer at Tata Consultancy Services. Loves to learn and apply various machine learning 
     
 Teja Vanukuri(He/Him)
-* Role: Front End Developer, Data science
+* Role: Data Analyst, Data science, Front End Developer
 * Expertise: Python, Spark, Machine Learning
-* Bio: A graduate student in Data Science and Analytics major at University of Missouri-Kansas City. Loves to build websites and to showcase the insights obtained during the data analysis in an interactive manner.
+* Bio: A graduate student in Data Science and Analytics major at University of Missouri-Kansas City and a former Data analyst at Eclinical solutions. Loves to build websites and to showcase the insights obtained during the data analysis in an interactive manner.
 
 Hemanth Reddy Kolli(Him/He)
 * Role: Big Data Engineer, Data scientist, Data Analyst, Data Specialist
