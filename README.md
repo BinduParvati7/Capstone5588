@@ -2,7 +2,7 @@
 A Capstone Project by team of 3 people for COMP_SCI_5588 course at University of Missouri-Kansas City.
 
 Project Brief description:
-A capstone project to spot anomalies and take appropriate action about people's access to education based on Diversity, Equity, and Inclusiona,on various groups in the US and around the world. Research is carried out to learn the insights needed for the government to take steps for improvement of education access to all people, which leads to development, based on a variety of elements available in the data.
+Credit card fraud has become a common problem in our increasingly digital age, costing people and businesses a lot of money. This issue is being addressed by the Credit Card Transactions Fraud Detection project, which intends to produce a reliable dataset to make it easier to develop and test machine learning models for detecting credit card fraud. Because it helps to increase the security of financial transactions and protect the interests of both consumers and businesses.
 
 Team introduction:
 Bindu Parvati Jonnala Gadda(She/Her)
@@ -22,6 +22,6 @@ Hemanth Reddy Kolli(Him/He)
 
 
 Data source:
-Amazon marketplace. Third party data available to build projects on amazon marketplace.
-This product contains datasets that present data on access to education in the United States and in the world. 
-There are 3 datasets, one for the US and two international: Educational Attainment Levels within the United States from the U.S. Census, Gender Disparity in Education-International, and School Completion Rates-International.
+Kaggle. Third party data available to build projects on kaggle.
+This product contains datasets that present data on credit card transactions. 
+There are 2 datasets, one for the Train and two Test dataset: dataset has columns like Trans date, CC_Num, Merchant, Category, Amt, Gender, Name, City, State, Zip, Job etc.…
