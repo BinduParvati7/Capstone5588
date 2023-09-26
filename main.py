@@ -27,27 +27,51 @@ fraudfinal['trans_date'] = pd.to_datetime(fraudfinal['trans_date'])
 print(fraudfinal.info())
 print(fraudfinal.head())
 
+# average amount spent by Job in missouri
+
 job_amt = fraudfinal.loc[fraudfinal["state"] == "MO"].groupby(["job"])["amt"].mean()
 print(job_amt)
 job_amt.plot(kind = "bar", x = "job", y = "amt")
+plt.title("average amount spent by Job in missouri")
 plt.show()
+
+# average amount spent by Category in missouri
 
 category_amt = fraudfinal.loc[fraudfinal["state"] == "MO"].groupby(["category"])["amt"].mean()
 print(category_amt)
-category_amt.plot(kind = "bar", x = "category", y = "amt")
+category_amt.plot(kind = "bar", x = "category", y = "amt", color="red")
+plt.title("average amount spent by Category in missouri")
 plt.show()
+
+# number of frauds recorded by Card Number in missouri
 
 ccnum_fraud = fraudfinal.loc[fraudfinal["state"] == "MO"].groupby(["cc_num"])["is_fraud"].sum()
 print(ccnum_fraud)
-ccnum_fraud.plot(kind = "bar", x = "cc_num", y = "is_fraud")
+ccnum_fraud.plot(kind = "bar", x = "cc_num", y = "is_fraud", color="pink")
+plt.title("number of frauds recorded by Card Number in missouri")
 plt.show()
+
+# number of frauds recorded by State
 
 state_fraud = fraudfinal.groupby(["state"])["is_fraud"].sum()
 print(state_fraud)
-state_fraud.plot(kind = "bar", x = "state", y = "is_fraud")
+state_fraud.plot(kind = "bar", x = "state", y = "is_fraud", color="yellow")
+plt.title("number of frauds recorded by State")
 plt.show()
+
+# number of frauds recorded by cities in new york
 
 city_fraud = fraudfinal.loc[fraudfinal["state"] == "NY"].groupby(["city"])["is_fraud"].sum()
 print(city_fraud)
-city_fraud.plot(kind = "bar", x = "city", y = "is_fraud")
+city_fraud.plot(kind = "bar", x = "city", y = "is_fraud", color="violet")
+plt.title("number of frauds recorded by cities in new york")
 plt.show()
+
+# number of frauds recorded by gender
+
+gender_fraud = fraudfinal.groupby(["gender"])["is_fraud"].sum()
+print(gender_fraud)
+gender_fraud.plot(kind = "pie", x = "gender", y = "is_fraud")
+plt.title("number of frauds recorded by gender")
+plt.show()
+
