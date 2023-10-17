@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+/* Global */
+* {
+    box-sizing: border-box;
+}
+ 
+body,
+html {
+    height: 90%;
+    min-height: 90%;
+}
+ 
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+    background-image: url("cardimg.jpeg");
+    
+}
+/* Credit Card */
+.credit-card {
+    width: 500px;
+    height: 500px;
+    margin: 120px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/51/91/credit-card-digital-concept-background-vector-41045191.jpg");
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    
+}
+.card-number {
+  border: 1px solid black;
+  width: 300px;
+  height:30px;
+  margin: 10px 60px 10px;
+}
+.submit {
+   border: 1px solid black;
+   width: 120px;
+   height:30px;
+   margin: 25px 150px 10px;
+   cursor: pointer;
+   background-color: orange;
+   color: white;
+}
+.form-header {
+    height: 60px;
+    text-align: center;
+    padding: 10px 100px 0;
+    color: white;
+    border-bottom: 1px solid #e1e8ee;
+}
+ 
+.form-body {
+    height: 340px;
+    text-align: center;
+    float: center;
+    padding: 20px 60px 10px 10px;
+    margin: 20px 60px  20px 20px;
+}
+</style>
+<body>
+<form class="credit-card">
+  <div class="form-header">
+    <h4 class="title">Credit Card Details</h4>
+  </div>
+ 
+  <div class="form-body">
+    <!-- Card Number -->
+    <input type="text" class="card-number" placeholder="Credit Card Number" maxlength="16" pattern="[0-9]{16}" required autofocus><br>
+    <input type="text" class="card-number" placeholder="Card holder Name" pattern="[A-Z,a-z]{3,20}" required><br>
+    <input type="text" class="card-number" placeholder="Amount spended in dollars($)" pattern="[0-9]{1,10}" required><br>
+    <input type="text" class="card-number" placeholder="Zip-code" maxlength="5" pattern="[0-9]{5}" required><br>
+    
+ 
+    <!-- Buttons -->
+    <button type="submit" class="submit" formaction="/ex.html">Check for fraud</a></button>
+  </div>
+</form>
+</body>
+</head>
+</html>
